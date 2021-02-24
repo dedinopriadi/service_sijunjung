@@ -83,3 +83,17 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+/************************** EMAIL CONSTANTS *****************************/
+
+define('EMAIL_FROM',                            'info.kppnsijunjung@gmail.com');		// e.g. email@example.com
+define('EMAIL_BCC',                            	'');		// e.g. email@example.com
+define('FROM_NAME',                             'KPPN Sijunjung');	// Your system name
+define('EMAIL_PASS',                            'kppn134679!@#');	// Your email password
+define('PROTOCOL',                             	'smtp');				// mail, sendmail, smtp
+define('SMTP_HOST',                             'ssl://smtp.gmail.com');		// your smtp host e.g. smtp.gmail.com
+define('SMTP_PORT',                             '465');					// your smtp port e.g. 25, 587
+define('SMTP_USER',                             'info.kppnsijunjung@gmail.com');		// your smtp user
+define('SMTP_PASS',                             'kppn134679!@#');	// your smtp password
+define('MAIL_PATH',                             '/usr/sbin/sendmail');
