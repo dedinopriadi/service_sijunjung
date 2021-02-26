@@ -58,3 +58,10 @@ $route['404_override'] = '';
 $route['sendPengaduan'] = 'Pengaduan/sendPengaduan';
 
 /*********** END PENGADUAN DEFINED ROUTES *******************/
+
+
+/************** KONSULTASI DEFINED ROUTES *******************/
+
+$route['createKonsul'] = 'Konsultasi/createKonsul';
+
+/*********** END KONSULTASI DEFINED ROUTES *******************/

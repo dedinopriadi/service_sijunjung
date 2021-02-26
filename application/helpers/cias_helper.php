@@ -134,4 +134,23 @@ if(!function_exists('verificationInternal'))
 }
 
 
+if(!function_exists('verificationKonsul'))
+{
+    function verificationKonsul($detail)
+    {
+        $data["data"] = $detail;
+
+        $CI = setProtocol();        
+        
+        $CI->email->from(EMAIL_FROM, FROM_NAME);
+        $CI->email->subject($detail["subject"]);
+        $CI->email->message($CI->load->view('email/verificationKonsul', $data, TRUE));
+        $CI->email->to($detail["email"]);
+        $status = $CI->email->send();
+        
+        return $status;
+    }
+}
+
+
 ?>

@@ -18,10 +18,10 @@ class Pengaduan extends BaseController {
 
 	public function sendPengaduan() {
 		$postdata = json_decode(file_get_contents('php://input'), TRUE);
-        $nama  = (isset($postdata['nama']) ? $postdata['nama'] : NULL);
-        $email = (isset($postdata['email']) ? $postdata['email'] : NULL);
-        $isi   = (isset($postdata['isi']) ? $postdata['isi'] : NULL);
-        $judul = (isset($postdata['judul']) ? $postdata['judul'] : NULL);
+        $nama  = (isset($_POST['nama']) ? $_POST['nama'] : NULL);
+        $email = (isset($_POST['email']) ? $_POST['email'] : NULL);
+        $isi   = (isset($_POST['isi']) ? $_POST['isi'] : NULL);
+        $judul = (isset($_POST['judul']) ? $_POST['judul'] : NULL);
 
 
         if(empty($email)){
